@@ -13,7 +13,6 @@ class Solution:
 
         #Define what left/ right root is
         right = self.invertTree(root.right)
-        print(right)
         left = self.invertTree(root.left)
 
         #Inverting process
