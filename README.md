@@ -14,4 +14,4 @@ This folder contains my solutions to assignments from CS1332, a course offered b
 
 Here, I engage in practicing Python programming, particularly focusing on problems involving loops and arrays. These exercises enable me to sharpen my skills in writing clean, efficient, and idiomatic Python code. As I progress, I plan to explore various Python libraries and advanced topics to broaden my knowledge and capabilities.
 
-Feel free to explore the content of each folder and provide any feedback or suggestions. Together, let's embark on this journey of continuous learning and growth in the world of programming!
+Feel free to explore the content of each folder and provide any feedback or suggestions. 
