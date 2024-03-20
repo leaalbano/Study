@@ -25,13 +25,14 @@ class ArrayQueue:
         """
         if data is None:
             raise ValueError
+
         if self.size == len(self.backing_array):
             temp_backing_array = self.backing_array
             self.backing_array = [None] * (len(self.backing_array) * 2)
             for i in range(len(temp_backing_array)):
                 self.backing_array[i] = temp_backing_array[i]
             self.front = 0
-        self.backing_array[self.size + self.front] = data
+        self.backing_array[self.size] = data
         self.size += 1
 
     def dequeue(self):
@@ -89,3 +90,5 @@ class ArrayQueue:
         :return: the backing array
         """
         return self.backing_array
+    
+    
