@@ -1,15 +1,17 @@
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
-        i = 0
-        j = len(nums)-1
-        good_pairs = 0
+ 
+        count = {}
+        total = 0
+        for num in nums:
+            if num in count:
+                count[num] += 1
+            else:
+                count[num] = 1
         
-        for i in range(0, len(nums), 1):
-            for j in range(i+1, len(nums), 1):
-                if nums[i] == nums[j]:
-                    print(f"i: {i}, j: {j}")
-                    good_pairs += 1
-        return good_pairs
-
+        for val in count.items():
+            c = val[1]*(val[1]-1) // 2
+            total += c
+        return total
 
         
