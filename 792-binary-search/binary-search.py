@@ -6,14 +6,11 @@ class Solution:
         print(f"mid: {mid}")
         for num in nums:
             if nums[mid] == target:
-                print(f"mid: {mid}")
                 return mid
             elif nums[mid] < target:
                 l = mid +1
-                print(f"l: {l}")
             else:
                 r = mid-1
-                print(f"r: {r}")
             mid = (r + l) //2
         return -1
         
