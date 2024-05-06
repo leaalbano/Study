@@ -3,7 +3,6 @@ class Solution:
         l = 0
         r = len(nums)-1
         mid = (r + l+1) //2
-        print(f"mid: {mid}")
         for num in nums:
             if nums[mid] == target:
                 return mid
